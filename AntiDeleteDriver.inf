@@ -1,0 +1,18 @@
+[Version]
+Signature   = "$Windows NT$"
+Class       = "ActivityMonitor"
+ClassGuid   = {b86dff51-a31e-4bac-b3cf-e8cfe75c9fc2}
+Provider    = "MyCompany"
+CatalogFile = anti_delete.cat
+DriverVer = 06/27/2026,3.40.21.658
+PnpLockdown = 1
+
+[DefaultInstall.Services]
+AddService = AntiDeleteService,,Service_Inst
+
+[Service_Inst]
+DisplayName    = "AntiDeleteFilter"
+ServiceType    = 2
+StartType      = 3
+ErrorControl   = 1
+ServiceBinary  = %12%\anti_delete.sys
