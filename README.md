@@ -1,4 +1,4 @@
-readme_content = """# AntiDeleteDriver
+# AntiDeleteDriver
 
 Проект драйвера-минифильтра файловой системы для ОС Windows, предназначенный для защиты файлов от удаления.
 
